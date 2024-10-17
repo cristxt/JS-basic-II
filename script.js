@@ -83,30 +83,62 @@ if (pet2=="perro") {
 //Ejercicio 8: Haz el mismo ejercicio 6, pero con el condicional switch.
 
 //Escribe tu código aquí
+const pet3 = "perro";
+//Escribe tu código aquí
+switch (expr) {
+  case "perro":
+    console.log("Tengo un perro");
+  break;
+  case "gato":
+    console.log("Tengo un gato");
+  break;
+  case "pajaro":
+      console.log("Tengo un pájaro");
+    default:
+    console.log("No tengo una mascota convencional");
+}
 
 
 //Ejercicio 9: Usando un operador ternario, escribe un programa que lea la constante weather e imprima en consola si es soleado "Me vestiré con un vestido" y si no es así que imprima "Me vestiré con pantalón"
 
 const weather = "soleado"
 
-const result = //Escribe tu código aquí;
+const result = weather=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón"
+condición ? expr1 : expr2
+
 
 console.log(result)
 
 //Ejercicio 10: cambia el valor de weather a "frío" y mira el resultado en consola para comprobar que tu código funciona bien.
 
+const weather = "frío"
+
+const result = weather=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón"
+
+
+console.log(result)
+
 //Ejercicio 11: Escribe un programa que al darle la constante 'value' imprima en consola "Es un número" cuando el valor sea de tipo number, "Es un string" cuando el valor sea de tipo string o si no es ni uno ni otro que imprima "No es ni número ni string". Puedes hacerlo con cualquier tipo de condicional.
 
-const value = '1'
 
 //Escribe tu código aquí
 
+const value = 1
+if (typeof value === "number"){
+    console.log ("Es un número");
+
+} else if (typeof value === "string") {
+  console.log ("Es un string");
+} else {
+  console.log ("No es ni número ni string");
+}
 
 //BUCLES
 
 //Ejercicio 12: Imprime en consola una lista del 0 al 10 con el bucle for
 
 //Escribe tu código aquí
+
 
 
 //Ejercicio 13: Con un bucle for in imprime en pantalla todos los nombres, apellidos y su aporte a la sociedad de las programadoras de la historia contenidas en el array llamado 'programmers', Deberás imprimir el índice y la información de cada una de ellas de la siguiente manera: '0: Ada Lovelace, su aporte fue la máquina analítica'. 
