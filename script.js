@@ -111,37 +111,42 @@ const value = '1'
 
 //Ejercicio 13: Con un bucle for in imprime en pantalla todos los nombres, apellidos y su aporte a la sociedad de las programadoras de la historia contenidas en el array llamado 'programmers', Deberás imprimir el índice y la información de cada una de ellas de la siguiente manera: '0: Ada Lovelace, su aporte fue la máquina analítica'. 
 
-const programmers = [
-    {
-        name: 'Ada',
-        lastname: 'Lovelace',
-        knowledge: 'la máquina analítica'
-    },
-    {
-        name: 'Margaret',
-        lastname: 'Hamilton',
-        knowledge: 'el programa espacial Apolo'
-    },
-    {
-        name: 'Grace',
-        lastname: 'Hopper',
-        knowledge: 'el lenguaje Cobol'
-    },
-    {
-        name: 'Hedy',
-        lastname: 'Lamarr',
-        knowledge: 'el wifi'
-    }     
-]
 
 //Escribe tu código aquí
 
+const programmers = [
+  {
+      name: 'Ada',
+      lastname: 'Lovelace',
+      knowledge: 'la máquina analítica'
+  },
+  {
+      name: 'Margaret',
+      lastname: 'Hamilton',
+      knowledge: 'el programa espacial Apolo'
+  },
+  {
+      name: 'Grace',
+      lastname: 'Hopper',
+      knowledge: 'el lenguaje Cobol'
+  },
+  {
+      name: 'Hedy',
+      lastname: 'Lamarr',
+      knowledge: 'el wifi'
+  }     
+]
 
 //Ejercicio 14: Con un bucle for of imprime en consola "Hola, mi nombre es ... " y reemplaza los tres puntos con cada nombre del array dado.
 
 const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia']
 
 //Escribe tu código aquí
+const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia'];
+
+for (const names) {
+    console.log("Hola, mi nombre es ${name}");
+}
 
 
 //Ejercicio 15: Con un bucle while imprime en consola una lista del 1 al 5.
