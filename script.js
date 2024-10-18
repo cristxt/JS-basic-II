@@ -1,3 +1,4 @@
+
 //Bienvenida a Javascript básico parte II, donde veremos condicionales y bucles.
 
 //En el archivo index.html que tienes abierto en el navegador (preferiblemente chrome o firefox) vamos a trabajar con la consola, abre tu inspector y en la pestaña de consola, mira si puedes ver el mensaje escrito abajo.
@@ -84,7 +85,7 @@ if (pet2=="perro") {
 
 //Escribe tu código aquí
 const pet3 = "perro";
-//Escribe tu código aquí
+const expr = pet3;
 switch (expr) {
   case "perro":
     console.log("Tengo un perro");
@@ -101,23 +102,18 @@ switch (expr) {
 
 //Ejercicio 9: Usando un operador ternario, escribe un programa que lea la constante weather e imprima en consola si es soleado "Me vestiré con un vestido" y si no es así que imprima "Me vestiré con pantalón"
 
-const weather = "soleado"
-
-const result = weather=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón"
-condición ? expr1 : expr2
-
-
-console.log(result)
+const weather = "soleado";
+const result = weather=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón";
+console.log(result);
 
 //Ejercicio 10: cambia el valor de weather a "frío" y mira el resultado en consola para comprobar que tu código funciona bien.
 
-const weather = "frío"
+const weather2 = "frío"
 
-const result = weather=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón"
+const result2 = weather2=== "soleado"? "Me vestiré con un vestido" : "Me vestiré con pantalón"
 
 
 console.log(result)
-
 //Ejercicio 11: Escribe un programa que al darle la constante 'value' imprima en consola "Es un número" cuando el valor sea de tipo number, "Es un string" cuando el valor sea de tipo string o si no es ni uno ni otro que imprima "No es ni número ni string". Puedes hacerlo con cualquier tipo de condicional.
 
 
@@ -138,7 +134,9 @@ if (typeof value === "number"){
 //Ejercicio 12: Imprime en consola una lista del 0 al 10 con el bucle for
 
 //Escribe tu código aquí
-
+for (let i = 0; i <= 10; i++) { 
+  console.log(i); 
+  }
 
 
 //Ejercicio 13: Con un bucle for in imprime en pantalla todos los nombres, apellidos y su aporte a la sociedad de las programadoras de la historia contenidas en el array llamado 'programmers', Deberás imprimir el índice y la información de cada una de ellas de la siguiente manera: '0: Ada Lovelace, su aporte fue la máquina analítica'. 
@@ -168,34 +166,47 @@ const programmers = [
       knowledge: 'el wifi'
   }     
 ]
+for (let i = 0; i < programmers.length; i++) { 
+  console.log(i + ': ' + programmers[i].name + ' ' + programmers[i].lastname + "su aporte  " + programmers[i].knowledge + '.'); 
+  }
 
 //Ejercicio 14: Con un bucle for of imprime en consola "Hola, mi nombre es ... " y reemplaza los tres puntos con cada nombre del array dado.
 
-const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia']
-
 //Escribe tu código aquí
-const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia'];
-
-for (const names) {
-    console.log("Hola, mi nombre es ${name}");
+const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia']; 
+for (const name of names) { 
+  console.log("Hola, mi nombre es " + name);
 }
-
 
 //Ejercicio 15: Con un bucle while imprime en consola una lista del 1 al 5.
 
 //Escribe tu código aquí
-
+let i = 1;
+while (i <= 5) { 
+console.log(i);
+i++; 
+}
 
 //Ejercicio 16: Realiza el mismo ejercicio anterior pero con un bucle do while.
 
 //Escribe tu código aquí
-
+do {
+    console.log(i);
+    i++; 
+} 
+while (i <= 5);
 
 //Ejercicio 17: Saludo Personalizado
 //Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
 
 //Escribe tu código aquí
-
+function saludar(nombre) { 
+  return "Holiiiiii, ¿qué tal? mi nombre es " + nombre; 
+  }
+  console.log(saludar("Maria de las Angustias"));
+  console.log(saludar("Manuelita"));
+  console.log(saludar("Antonia María"));
+  console.log(saludar("Agustina Dolores"));
 
 //Ejercicio 18: Calcular el Área de un Rectángulo
 //Crea una función llamada calcularAreaRectangulo que tome dos parámetros (ancho y alto) y devuelva el área del rectángulo. Luego, llama a la función con diferentes valores de ancho y alto y muestra el resultado en la consola.
